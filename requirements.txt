@@ -1,0 +1,8 @@
+omegaconf>=2.2.0
+librosa>=0.10
+local-attention>=1.9
+encodec>=0.1
+transformers
+fairscale>=0.4
+sentencepiece
+pyarrow>=14.0

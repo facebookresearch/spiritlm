@@ -1,0 +1,5 @@
+{"emotion": "angry", "wav_path": "emov/sam/Angry/anger_281-308_0286.wav", "split": "test", "speaker": "sam", "id": 4792320029370491913}
+{"emotion": "neutral", "wav_path": "emov/sam/Neutral/neutral_281-308_0286.wav", "split": "test", "speaker": "sam", "id": -5682350483296949563}
+{"emotion": "amused", "wav_path": "emov/sam/Amused/amused_281-308_0286.wav", "split": "test", "speaker": "sam", "id": -8754508989367964614}
+{"emotion": "angry", "wav_path": "emov/jenie/Angry/anger_57-84_0084.wav", "split": "test", "speaker": "jenie", "id": -9018665079841831624}
+{"emotion": "neutral", "wav_path": "emov/jenie/Neutral/neutral_57-84_0084.wav", "split": "test", "speaker": "jenie", "id": 1159246029716120600}

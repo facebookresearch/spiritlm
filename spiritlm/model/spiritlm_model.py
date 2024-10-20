@@ -218,7 +218,7 @@ class Spiritlm:
         output_modality: OutputModality,
     ) -> List[int]:
         """
-        Build a set of token ids that we don't want to generate according the the modality direction.
+        Build a set of token ids that we don't want to generate according the modality direction.
 
         For instance, when the modality direction is speech to text (S2T), i.e., we continue
         generating text given a speech prompt, we want that the output contains only the text tokens.

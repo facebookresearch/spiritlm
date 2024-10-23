@@ -29,8 +29,11 @@ from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, set
 _logger = logging.getLogger(__name__)
 
 
-CHECKPOINT_DIR = Path(__file__).parent.parent.parent / "checkpoints/spiritlm_model"
+# Get the base checkpoints directory from environment variable or use the default base path
+base_checkpoints_dir = Path(os.getenv("SPIRITLM_CHECKPOINTS_DIR", Path(__file__).parent.parent.parent / "checkpoints"))
 
+# Append 'spiritlm_model' to the base path
+CHECKPOINT_DIR = base_checkpoints_dir / "spiritlm_model"
 
 class ContentType(Enum):
     TEXT = "TEXT"

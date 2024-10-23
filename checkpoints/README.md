@@ -50,3 +50,4 @@ checkpoints/
         ├── tokenizer_config.json
         └── tokenizer.model
 ```
+You can export `SPIRITLM_CHECKPOINTS_DIR` to point to a differnt directory where you downloaded checkpoints.

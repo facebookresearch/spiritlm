@@ -5,12 +5,17 @@
 # found in the LICENSE file in the root directory of this source tree.
 
 from pathlib import Path
+import os
 
 import torch
 
 from .hubert_tokenizer import HubertTokenizer
 
-CHECKPOINT_DIR = Path(__file__).parents[3] / "checkpoints/speech_tokenizer"
+# Get the base checkpoints directory from environment variable or use the default base path
+base_checkpoints_dir = Path(os.getenv("SPIRITLM_CHECKPOINTS_DIR", Path(__file__).parents[3] / "checkpoints"))
+
+# Append 'speech_tokenizer' to the base path
+CHECKPOINT_DIR = base_checkpoints_dir / "speech_tokenizer"
 
 CURRENT_DEVICE = (
     torch.device(torch.cuda.current_device())

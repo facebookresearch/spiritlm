@@ -14,7 +14,6 @@ pip install -e '.[eval]'
 ```
 ### Pip
 ```
-pip install -e requirements.txt
 pip install -e '.[eval]'
 ```
 
